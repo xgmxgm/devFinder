@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  background: #141C2F;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

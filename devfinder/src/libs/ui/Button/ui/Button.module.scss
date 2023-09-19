@@ -1,0 +1,15 @@
+.Button {
+    background: #0079FE;
+    font-size: 14pt;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .Button {
+        font-size: 12pt;
+        padding: 15px;
+    }
+}

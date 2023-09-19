@@ -1,0 +1,38 @@
+.Input {
+    width: 90%;
+    height: 60px;
+    border-radius: 15px;
+    background: #1F2A48;
+    color: white;
+    font-size: 16pt;
+}
+
+.Input:focus {
+    border: 2px #141C2F solid;
+    outline: none;
+}
+
+.Input_body_div {
+    width: 100%;
+    background: #141C2F;
+    margin: 20px 0;
+}
+
+.Input_body {
+    background: #1F2A48;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 16pt;
+}
+
+@media (max-width: 600px) {
+    input::placeholder {
+        font-size: 13pt;
+    }
+}

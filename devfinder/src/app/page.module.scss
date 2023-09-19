@@ -1,0 +1,114 @@
+main {
+    width: 80%;
+    border-radius: 15px;
+}
+
+.info {
+    display: flex;
+
+    .left_colum { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 20%;
+        padding: 50px;
+
+        img {
+            max-width: 100%;
+            border-radius: 50%;
+            min-width: 150px;
+        }
+    }
+
+    .right_colum {
+        display: flex;
+        flex-direction: column;
+
+        .up {
+            display: flex;
+            flex-direction: column;
+
+            .bio {
+                margin-top: 15px;
+            }
+        }
+
+        .center {
+            display: flex;
+            background: #141C2F;
+            border-radius: 15px;
+            margin: 30px 0;
+
+            .info {
+                font-size: 13pt;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+        }
+        .down {
+            h2 {
+                font-size: 14pt;
+                font-weight: normal;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+
+            .text {
+                display: flex;
+                align-items: center;
+
+                .Image {
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+.Load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 18pt;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+
+        .up {
+            text-align: center;
+        }
+
+        .center {
+            justify-content: center;
+        }
+
+        .down {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .info {
+        .right_colum {
+            .center {
+                .info {
+                    font-size: 10pt;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
