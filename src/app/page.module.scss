@@ -9,7 +9,7 @@
         width: 20%;
         padding: 50px;
 
-        img {
+        .img {
             max-width: 100%;
             border-radius: 50%;
             min-width: 150px;
@@ -44,11 +44,11 @@
             }
         }
         .down {
-            h2 {
+            .h2 {
                 font-size: 14pt;
                 font-weight: normal;
 
-                a {
+                .a {
                     text-decoration: none;
                     color: white;
                 }
@@ -73,7 +73,7 @@
 }
 
 @media (max-width: 800px) {
-    h1 {
+    .h1 {
         font-size: 18pt;
     }
 

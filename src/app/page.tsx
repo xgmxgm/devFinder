@@ -18,18 +18,18 @@ export default function Home() {
 
   return (
     <div className={styles.main}>
-      <h1>devfinder</h1>
+      <h1 className={styles.h1}>devfinder</h1>
       <Search inputData={username} setInputData={setUsername} functionForBtn={() => GetGithubUser(setUserData, username, setUsername, setIsLoading, setMessage)} />
         {!isLoading ? userData ?
           <ProfileInfo>
             <div className={styles.info}>
               <div className={styles.left_colum}>
-                <img src={userData && userData.avatar_url} alt="Not Available" />
+                <img className={styles.img} src={userData && userData.avatar_url} alt="Not Available" />
               </div>
               <div className={styles.right_colum}>
                 <div className={styles.up}>
                   <div>
-                    <h2>{userData &&  userData.login}</h2>
+                    <h2 className={styles.h2}>{userData &&  userData.login}</h2>
                   </div>
                   <div className={styles.bio}>
                     <p>{userData &&  userData.bio}</p>
@@ -51,15 +51,15 @@ export default function Home() {
                 </div>
                 <div className={styles.down}>
                   <div className={styles.text}>
-                    <h2><Image className={styles.Image} src='/marker.svg' width={20} height={20} alt="location_icon" />{userData.location ? userData.location : 'Not Available'}</h2>
+                    <h2 className={styles.h2}><Image className={styles.Image} src='/marker.svg' width={20} height={20} alt="location_icon" />{userData.location ? userData.location : 'Not Available'}</h2>
                   </div>
                   <div className={styles.text}>
-                    <h2><Image className={styles.Image} src='/link.svg' width={20} height={20} alt="location_icon" /><a href={userData.blog} target="_blank">{userData.blog ? userData.blog : 'Not Available'}</a></h2>
+                    <h2 className={styles.h2}><Image className={styles.Image} src='/link.svg' width={20} height={20} alt="location_icon" /><a className={styles.a} href={userData.blog} target="_blank">{userData.blog ? userData.blog : 'Not Available'}</a></h2>
                   </div>
                 </div>
               </div>
             </div>
-          </ProfileInfo> : <div className={styles.Load}><h2>{message}</h2></div> :
+          </ProfileInfo> : <div className={styles.Load}><h2 className={styles.h2}>{message}</h2></div> :
         <div className={styles.Load}> <Loading /> </div>}
     </div>
   )
